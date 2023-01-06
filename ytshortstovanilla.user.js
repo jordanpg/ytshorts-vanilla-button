@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         YouTube Shorts To Vanilla Button
 // @namespace    https://jordanpg.dev/
-// @version      2.2.1
+// @version      2.3
 // @description  add a button to view youtube short in vanilla player
 // @author       jordanpg
 // @match        https://www.youtube.com/*
