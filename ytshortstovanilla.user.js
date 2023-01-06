@@ -6,6 +6,7 @@
 // @author       jordanpg
 // @match        http*://www.youtube.com/shorts/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=youtube.com
+// @downloadURL  https://github.com/jordanpg/ytshorts-vanilla-button/raw/main/ytshortstovanilla.user.js
 // @grant        none
 // ==/UserScript==
 
