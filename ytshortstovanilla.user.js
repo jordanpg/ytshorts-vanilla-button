@@ -17,14 +17,9 @@
 
     function generateVanillaButton() {
         const action = document.querySelector("ytd-reel-video-renderer[is-active] #actions");
-        
-        if(!action) {
-            setTimeout(generateVanillaButton, 100);
-            return;
-        }
-
         const videoId = urlRegex.exec(window.location.href);
-        if(!videoId) {
+        
+        if(!action || !videoId) {
             setTimeout(generateVanillaButton, 100);
             return;
         }
