@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         YouTube Shorts To Vanilla Button
 // @namespace    https://jordanpg.dev/
-// @version      2.0
+// @version      2.1
 // @description  add a button to view youtube short in vanilla player
 // @author       jordanpg
-// @match        http*://www.youtube.com/shorts/*
+// @match        http*://www.youtube.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=youtube.com
 // @downloadURL  https://github.com/jordanpg/ytshorts-vanilla-button/raw/main/ytshortstovanilla.user.js
 // @grant        none
@@ -16,15 +16,15 @@
     const urlRegex = /(?:https?:)?(?:\/\/)?(?:[0-9A-Z-]+\.)?(?:youtu\.be\/|youtube(?:-nocookie)?\.com\S*?[^\w\s-])([\w-]{11})(?=[^\w-]|$)(?![?=&+%\w.-]*(?:['"][^<>]*>|<\/a>))[?=&+%\w.-]*/gim;
 
     function generateVanillaButton() {
-        const videoId = urlRegex.exec(window.location.href);
-        if(!videoId) return;
-
         const action = document.querySelector("ytd-reel-video-renderer[is-active] #actions");
-
+        
         if(!action) {
             setTimeout(generateVanillaButton, 100);
             return;
         }
+
+        const videoId = urlRegex.exec(window.location.href);
+        if(!videoId) return;
 
         if(action.querySelector("#to-vanilla")) return;
 
