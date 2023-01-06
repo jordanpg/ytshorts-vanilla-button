@@ -4,7 +4,7 @@
 // @version      2.2.1
 // @description  add a button to view youtube short in vanilla player
 // @author       jordanpg
-// @match        http*://www.youtube.com/*
+// @match        https://www.youtube.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=youtube.com
 // @downloadURL  https://github.com/jordanpg/ytshorts-vanilla-button/raw/main/ytshortstovanilla.user.js
 // @grant        none
