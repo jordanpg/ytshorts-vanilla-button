@@ -49,7 +49,6 @@
         action.insertBefore(div, document.querySelector("ytd-reel-video-renderer[is-active] #actions #menu-button"));
     }
 
-    console.info("[YT Shorts to Vanilla Button] Loading...");
     generateVanillaButton();
     document.addEventListener('yt-navigate-finish', generateVanillaButton);
 })();
